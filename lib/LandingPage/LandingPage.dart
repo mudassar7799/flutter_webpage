@@ -136,7 +136,7 @@ class LandingPage3 extends StatelessWidget {
 
       Container(
           width: 950,
-       //  color: Colors.red,
+
         child:Column(
           children: <Widget>[
             Row(children: <Widget>[
@@ -224,6 +224,8 @@ class LandingPage3 extends StatelessWidget {
               ),
             ),
             Container(
+
+              height: 330,
               child: Column(children: <Widget>[
                 Row(children: <Widget>[
                   Column(children: <Widget>[
@@ -234,53 +236,46 @@ class LandingPage3 extends StatelessWidget {
                     ),
 
                   ],),
-                  Container(
-                    color: Colors.black,
+                  Column(children: <Widget>[
 
-                    child: Column(children: <Widget>[
-                      Row(children: <Widget>[
+                    Container(
+                     // color: Colors.red,
+                      margin: EdgeInsets.only(top: 80),
+                      child: Row(children: <Widget>[
 
                         Padding(
-                          padding: const EdgeInsets.only(left: 20,),
-                          child: Container(
+                          padding: const EdgeInsets.only(right: 500,),
+                          child: MaterialButton(
                             color: Colors.red,
-                            //padding: EdgeInsets.only(left: 100.0),
-                            margin: EdgeInsets.only(left:0),
-                            child: MaterialButton(
-                              color: Colors.red,
 
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.all(Radius.circular(0.0)),
-                              ),
-
-                              onPressed: () {},
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 2.0, horizontal: 4.0),
-                                child: Text(
-                                  "FINANCAS",
-                                  style: TextStyle(color: Colors.white),
-                                ),
+                            onPressed: () {},
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 0.0, horizontal: 0.0),
+                              child: Text(
+                                "ENSION",
+                                style: TextStyle(color: Colors.white),
                               ),
                             ),
                           ),
                         ),],),
-                      Container(
-                        width: 590,
-                        height: 50,
-                        color: Colors.red,
-                        child: Text("Centro Universitário UNIPÊ", ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      new Container(
-                        width: 190,
-                        height: 20,
-                        child: Text("05 Novembro 2019",style: TextStyle(color: Colors.grey,), ),
-                      ),
-                    ],),
-                  )
+                    ),
+                    Container(
+                      width: 590,
+                      height: 50,
+                      //color: Colors.red,
+                      child: Text("Centro Universitário UNIPÊ",style: TextStyle(fontSize: 20), ),
+                    ),
+                    SizedBox(
+                      height: 2,
+                    ),
+                    new Container(
+                      width: 590,
+                      height: 150,
+
+                      child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
+                    ),
+                  ],)
 
                 ],),
 
@@ -288,10 +283,9 @@ class LandingPage3 extends StatelessWidget {
             ),
 
 
-            SizedBox(
-              height: 10,
-            ),
-            new  Container(
+
+            Container(
+              height: 330,
               child: Column(children: <Widget>[
                 Row(children: <Widget>[
                   Column(children: <Widget>[
@@ -303,18 +297,43 @@ class LandingPage3 extends StatelessWidget {
 
                   ],),
                   Column(children: <Widget>[
+
                     Container(
-                      width: 190,
+                      // color: Colors.red,
+                      margin: EdgeInsets.only(top: 80),
+                      child: Row(children: <Widget>[
+
+                        Padding(
+                          padding: const EdgeInsets.only(right: 500,),
+                          child: MaterialButton(
+                            color: Colors.red,
+
+                            onPressed: () {},
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 0.0, horizontal: 0.0),
+                              child: Text(
+                                "ALIMENTACAO",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                        ),],),
+                    ),
+                    Container(
+                      width: 590,
                       height: 50,
-                      child: Text("Vinte toneladas de castanha de caju são apreendidas sem nota fiscal, na Paraíba", ),
+                      //color: Colors.red,
+                      child: Text("Santa Grelha",style: TextStyle(fontSize: 20), ),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 2,
                     ),
                     new Container(
-                      width: 190,
-                      height: 20,
-                      child: Text("05 Novembro 2019",style: TextStyle(color: Colors.grey,), ),
+                      width: 590,
+                      height: 150,
+
+                      child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
                     ),
                   ],)
 
@@ -322,36 +341,56 @@ class LandingPage3 extends StatelessWidget {
 
               ],),
             ),
-
-
-
-            SizedBox(
-              height: 10,
-            ),
-            new  Container(
+            Container(
+              height: 330,
               child: Column(children: <Widget>[
                 Row(children: <Widget>[
                   Column(children: <Widget>[
                     Image.asset(
-                      "assets/3.jpg",
+                      "assets/2.jpg",
                       width: 280,
                       height: 280,
                     ),
 
                   ],),
                   Column(children: <Widget>[
+
                     Container(
-                      width: 190,
+                      // color: Colors.red,
+                      margin: EdgeInsets.only(top: 80),
+                      child: Row(children: <Widget>[
+
+                        Padding(
+                          padding: const EdgeInsets.only(right: 500,),
+                          child: MaterialButton(
+                            color: Colors.red,
+
+                            onPressed: () {},
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 0.0, horizontal: 0.0),
+                              child: Text(
+                                "ENSION",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                        ),],),
+                    ),
+                    Container(
+                      width: 590,
                       height: 50,
-                      child: Text("Vinte toneladas de castanha de caju são apreendidas sem nota fiscal, na Paraíba", ),
+                      //color: Colors.red,
+                      child: Text("Outro Convênio",style: TextStyle(fontSize: 20), ),
                     ),
                     SizedBox(
-                      height: 10,
+                      height: 2,
                     ),
                     new Container(
-                      width: 190,
-                      height: 20,
-                      child: Text("05 Novembro 2019",style: TextStyle(color: Colors.grey,), ),
+                      width: 590,
+                      height: 150,
+
+                      child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
                     ),
                   ],)
 
@@ -359,15 +398,18 @@ class LandingPage3 extends StatelessWidget {
 
               ],),
             ),
+
           ],
         )
+
       ),
+
 
 
       Container(
         width: 300,
         height: 1700,
-
+      //  color: Colors.black,
         padding: const EdgeInsets.only(top: 0,),
         margin: const EdgeInsets.only(top: 0,),
         child: Column(
@@ -622,10 +664,97 @@ class LandingPage3 extends StatelessWidget {
 
               ],),
             ),
+            SizedBox(
 
+              width: 270.0,
+
+            ),
+            Text("NÃO PERCA", style: TextStyle(color: Colors.black, fontSize: 20),),
+            SizedBox(
+              height: 20.0,
+              width: 270.0,
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
+            ),
+
+            Container(
+              child: Column(children: <Widget>[
+                Row(children: <Widget>[
+                  Column(children: <Widget>[
+                    Container(
+                      width: 290,
+                      height: 50,
+                      child: Text("Receba em seu email fatos importantes que podem impactar o seu dia a dia",style: TextStyle(color: Colors.grey, fontSize: 20), ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    new Container(
+                      width: 290,
+                      height: 60,
+                     child: TextField(
+
+                       decoration: InputDecoration(enabledBorder: OutlineInputBorder(
+                       borderSide: BorderSide(color: Colors.blueGrey, ),
+                     ), focusedBorder: OutlineInputBorder(
+                         borderSide: BorderSide(color: Colors.blueGrey, ),
+                       ),
+                         hintText: "email",
+                       filled: true,
+                         fillColor: Colors.grey[200],
+                       ),),
+
+                    ),
+
+                  ],)
+
+                ],),
+
+              ],),
+            ),
+            Container(
+              width: 300,
+              child: RaisedButton(color: Colors.red,
+
+                onPressed: (){}, child: Text("INSCREVER",style: TextStyle(color: Colors.white),),)
+            ),
+            SizedBox(
+              height: 80.0,
+              width: 270.0,
+
+            ),
+            Text("AGENDA", style: TextStyle(color: Colors.black, fontSize: 20),),
+            SizedBox(
+              height: 20.0,
+              width: 270.0,
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
+            ),
+
+            Container(
+
+              child: Column(children: <Widget>[
+                Row(children: <Widget>[
+                  Column(children: <Widget>[
+                    Image.asset(
+                      "assets/cal.png",
+                      width: 280,
+                      height: 180,
+                    ),
+
+                  ],),
+
+                ],),
+
+              ],),
+            ),
 
           ],
+
         ),
+
       ),
 
     ];
@@ -643,6 +772,197 @@ class LandingPage3 extends StatelessWidget {
         } else {
           return Column(
             children: pageChildren3(constraints.biggest.width),
+          );
+        }
+      },
+    );
+  }
+}
+
+
+class LandingPage4 extends StatelessWidget {
+  List<Widget> pageChildren4(double width) {
+    return <Widget>[
+      Container(
+       // color: Colors.red,
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              color: Colors.red,
+              margin: EdgeInsets.only(right: 700.0),
+              child: MaterialButton(
+                color: Colors.white,
+
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(0.0)),
+                ),
+
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 20.0, horizontal: 40.0),
+                  child: Text(
+                    "VER TODOS >",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10.0,),
+            Padding(
+              padding: const EdgeInsets.only(left: 20,),
+              child: Row(  children: <Widget>[ Text("ARRECADAÇÃO E INDICADORES", style: TextStyle(color: Colors.black, fontSize: 20, ),),],),
+            ),
+
+            SizedBox(
+              height: 50.0,
+
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
+            ),
+
+
+          ],
+        ),
+      ),
+
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: pageChildren4(constraints.biggest.width / 1),
+          );
+        } else {
+          return Column(
+            children: pageChildren4(constraints.biggest.width),
+          );
+        }
+      },
+    );
+  }
+}
+
+
+
+class LandingPage5 extends StatelessWidget {
+  List<Widget> pageChildren5(double width) {
+    return <Widget>[
+      Container(
+        //color: Colors.red,
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+            RaisedButton(onPressed: (){},
+              color: Colors.red,
+              child: Text("ARRACDAPS",style: TextStyle( color: Colors.white,),),
+            ),
+            Text(
+              "Setembro/2019",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              child: Image.asset(
+                "assets/images/sa1.png",
+                width: 300,
+              ),
+            ),
+
+          ],
+        ),
+      ),
+
+      Container(
+        //color: Colors.red,
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+            RaisedButton(onPressed: (){},
+              color: Colors.red,
+              child: Text("ARRACDAPS",style: TextStyle( color: Colors.white,),),
+            ),
+            Text(
+              "Setembro/2019",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              child: Image.asset(
+                "assets/images/sa2.png",
+                width: 300,
+              ),
+            ),
+
+          ],
+        ),
+      ),
+
+      Container(
+        //color: Colors.red,
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+            RaisedButton(onPressed: (){},
+              color: Colors.red,
+              child: Text("ARRACDAPS",style: TextStyle( color: Colors.white,),),
+            ),
+            Text(
+              "Setembro/2019",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 0.0),
+              child: Image.asset(
+                "assets/images/sa3.png",
+                width: 300,
+              ),
+            ),
+
+          ],
+        ),
+      ),
+
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: pageChildren5(constraints.biggest.width / 4),
+          );
+        } else {
+          return Column(
+            children: pageChildren5(constraints.biggest.width),
           );
         }
       },

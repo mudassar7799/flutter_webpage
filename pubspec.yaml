@@ -43,6 +43,9 @@ flutter:
   assets:
     - assets/images/lp_image.png
     - assets/images/Logo.png
+    - assets/images/sa1.png
+    - assets/images/sa2.png
+    - assets/images/sa3.png
     - assets/Logo.png
     - assets/Lapi.jpg
     - assets/1.jpg
@@ -51,6 +54,7 @@ flutter:
     - assets/4.jpg
     - assets/5.jpg
     - assets/banr.png
+    - assets/cal.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
