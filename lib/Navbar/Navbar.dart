@@ -21,51 +21,51 @@ class DesktopNavbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+
       child: Container(
+        color: Colors.black ,
+        height: 70,
+
         child: Row(
+
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
+
             Text(
-              "RetroPortal Studio",
+              "BENEFICIOS EXCLUSIVOS PARA O FILIADO NO  \nIPC(pos,BSPS). BSSP<SECO",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  fontSize: 30),
+                  fontSize: 15),
             ),
             Row(
               children: <Widget>[
                 Text(
-                  "Home",
+                  "ICM 474.88Mi  \n^-7,45",
+
                   style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(
                   width: 30,
                 ),
                 Text(
-                  "About Us",
+                  "IPVA 32.958Mi \n-7,45",
                   style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(
                   width: 30,
                 ),
                 Text(
-                  "Portfolio",
+                  "ITCO 2.999Mi \n^-7,45",
                   style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(
                   width: 30,
                 ),
-                MaterialButton(
-                  color: Colors.pink,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                  onPressed: () {},
-                  child: Text(
-                    "Get Started",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                )
+                SizedBox(
+                  width: 40,
+                ),
               ],
             )
           ],
@@ -81,6 +81,7 @@ class MobileNavbar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Container(
+        color: Colors.black,
         child: Column(children: <Widget>[
           Text(
             "RetroPortal Studio",
