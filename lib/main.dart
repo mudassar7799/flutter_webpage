@@ -3,7 +3,7 @@ import 'package:flutter_webpage/LandingPage/LandingPage.dart';
 import 'package:flutter_webpage/Navbar/Navbar.dart';
 import 'package:flutter_webpage/Navbar/nav2.dart';
 import 'package:flutter_webpage/LandingPage/marque.dart';
-
+import 'landing_page.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,6 +21,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: true,
       body: Container(
         color: Colors.white,
 //        decoration: BoxDecoration(
@@ -87,6 +88,42 @@ class MyHomePage extends StatelessWidget {
 
 
               ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 0.0),
+                child: Div(),
+
+
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 0.0),
+                child: LandingPage6(),
+
+
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 0.0),
+                child: LandingPage7(),
+
+
+              ),
+//              Padding(
+//                padding: const EdgeInsets.symmetric(
+//                    vertical: 0.0, horizontal: 0.0),
+//                child: LandingPage9(),
+//
+//
+//              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 0.0),
+                child: LandingPage10(),
+
+
+              ),
+
             ],
           ),
         ),

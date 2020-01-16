@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:marquee_flutter/marquee_flutter.dart';
 import 'dart:async';
+import 'package:flutter_webpage/main.dart';
+import 'package:video_player/video_player.dart';
 class LandingPage extends StatelessWidget {
   List<Widget> pageChildren(double width) {
     return <Widget>[
@@ -217,186 +219,217 @@ class LandingPage3 extends StatelessWidget {
             ),
 
             SizedBox(
-              height: 20.0,
+              height: 10.0,
               width: 870.0,
               child: Divider(
                 color: Colors.teal.shade100,
               ),
             ),
-            Container(
+            SingleChildScrollView(
+              child: Container(
+                height: 240,
+                width: 1000,
+             //   color: Colors.red,
 
-              height: 330,
-              child: Column(children: <Widget>[
-                Row(children: <Widget>[
-                  Column(children: <Widget>[
-                    Image.asset(
-                      "assets/4.jpg",
-                      width: 280,
-                      height: 280,
-                    ),
-
-                  ],),
-                  Column(children: <Widget>[
-
+                child: Column(children: <Widget>[
+                  Row(children: <Widget>[
                     Container(
-                     // color: Colors.red,
-                      margin: EdgeInsets.only(top: 80),
-                      child: Row(children: <Widget>[
 
-                        Padding(
-                          padding: const EdgeInsets.only(right: 500,),
-                          child: MaterialButton(
-                            color: Colors.red,
+                      width: 300,
+                      child: Column(children: <Widget>[
 
-                            onPressed: () {},
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 0.0, horizontal: 0.0),
-                              child: Text(
-                                "ENSION",
-                                style: TextStyle(color: Colors.white),
+                        Image.asset(
+                          "assets/4.jpg",
+                          width: width,
+
+                        ),
+
+                      ],),
+                    ),
+                    Column(children: <Widget>[
+
+                      Container(
+                        // color: Colors.red,
+                        margin: EdgeInsets.only(top: 0),
+                        child: Row(children: <Widget>[
+
+                          Padding(
+                            padding: const EdgeInsets.only(right: 500,),
+                            child: MaterialButton(
+                              color: Colors.red,
+
+                              onPressed: () {},
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 0.0, horizontal: 0.0),
+                                child: Text(
+                                  "ENSION",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
-                          ),
-                        ),],),
-                    ),
-                    Container(
-                      width: 590,
-                      height: 50,
-                      //color: Colors.red,
-                      child: Text("Centro Universitário UNIPÊ",style: TextStyle(fontSize: 20), ),
-                    ),
-                    SizedBox(
-                      height: 2,
-                    ),
-                    new Container(
-                      width: 590,
-                      height: 150,
+                          ),],),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 400),
 
-                      child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
-                    ),
-                  ],)
+                        //color: Colors.red,
+                        child: Text("Outro Convênio",style: TextStyle(fontSize: 20), ),
+                      ),
+                      SizedBox(
+                        height: 2,
+                      ),
+                      new Container(
+                        width: width,
+
+
+                        child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
+                      ),
+                    ],)
+
+                  ],),
 
                 ],),
-
-              ],),
+              ),
             ),
 
 
 
-            Container(
-              height: 330,
-              child: Column(children: <Widget>[
-                Row(children: <Widget>[
-                  Column(children: <Widget>[
-                    Image.asset(
-                      "assets/1.jpg",
-                      width: 280,
-                      height: 280,
-                    ),
 
-                  ],),
-                  Column(children: <Widget>[
+            SingleChildScrollView(
+              child: Container(
+                height: 240,
+                width: 1000,
+                //color: Colors.red,
 
+                child: Column(children: <Widget>[
+                  Row(children: <Widget>[
                     Container(
-                      // color: Colors.red,
-                      margin: EdgeInsets.only(top: 80),
-                      child: Row(children: <Widget>[
 
-                        Padding(
-                          padding: const EdgeInsets.only(right: 500,),
-                          child: MaterialButton(
-                            color: Colors.red,
+                      width: 300,
+                      child: Column(children: <Widget>[
 
-                            onPressed: () {},
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 0.0, horizontal: 0.0),
-                              child: Text(
-                                "ALIMENTACAO",
-                                style: TextStyle(color: Colors.white),
+                        Image.asset(
+                          "assets/1.jpg",
+                          width: width,
+
+                        ),
+
+                      ],),
+                    ),
+                    Column(children: <Widget>[
+
+                      Container(
+                        // color: Colors.red,
+                        margin: EdgeInsets.only(top: 0),
+                        child: Row(children: <Widget>[
+
+                          Padding(
+                            padding: const EdgeInsets.only(right: 500,),
+                            child: MaterialButton(
+                              color: Colors.red,
+
+                              onPressed: () {},
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 0.0, horizontal: 0.0),
+                                child: Text(
+                                  "ENSION",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
-                          ),
-                        ),],),
-                    ),
-                    Container(
-                      width: 590,
-                      height: 50,
-                      //color: Colors.red,
-                      child: Text("Santa Grelha",style: TextStyle(fontSize: 20), ),
-                    ),
-                    SizedBox(
-                      height: 2,
-                    ),
-                    new Container(
-                      width: 590,
-                      height: 150,
+                          ),],),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(right: 400),
 
-                      child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
-                    ),
-                  ],)
+                        //color: Colors.red,
+                        child: Text("Outro Convênio",style: TextStyle(fontSize: 20), ),
+                      ),
+                      SizedBox(
+                        height: 2,
+                      ),
+                      new Container(
+                        width: width,
+
+
+                        child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
+                      ),
+                    ],)
+
+                  ],),
 
                 ],),
-
-              ],),
+              ),
             ),
-            Container(
-              height: 330,
-              child: Column(children: <Widget>[
-                Row(children: <Widget>[
-                  Column(children: <Widget>[
-                    Image.asset(
-                      "assets/2.jpg",
-                      width: 280,
-                      height: 280,
-                    ),
 
-                  ],),
-                  Column(children: <Widget>[
+            SingleChildScrollView(
+              child: Container(
+                height: 240,
+                width: 1000,
+              //  color: Colors.red,
 
+                child: Column(children: <Widget>[
+                  Row(children: <Widget>[
                     Container(
-                      // color: Colors.red,
-                      margin: EdgeInsets.only(top: 80),
-                      child: Row(children: <Widget>[
 
-                        Padding(
-                          padding: const EdgeInsets.only(right: 500,),
-                          child: MaterialButton(
-                            color: Colors.red,
+                      width: 300,
+                      child: Column(children: <Widget>[
 
-                            onPressed: () {},
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 0.0, horizontal: 0.0),
-                              child: Text(
-                                "ENSION",
-                                style: TextStyle(color: Colors.white),
+                        Image.asset(
+                          "assets/2.jpg",
+                          width: width,
+
+                        ),
+
+                      ],),
+                    ),
+                    Column(children: <Widget>[
+
+                      Container(
+                        // color: Colors.red,
+                        margin: EdgeInsets.only(top: 0),
+                        child: Row(children: <Widget>[
+
+                          Padding(
+                            padding: const EdgeInsets.only(right: 500,),
+                            child: MaterialButton(
+                              color: Colors.red,
+
+                              onPressed: () {},
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    vertical: 0.0, horizontal: 0.0),
+                                child: Text(
+                                  "ENSION",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
-                          ),
-                        ),],),
-                    ),
-                    Container(
-                      width: 590,
-                      height: 50,
-                      //color: Colors.red,
-                      child: Text("Outro Convênio",style: TextStyle(fontSize: 20), ),
-                    ),
-                    SizedBox(
-                      height: 2,
-                    ),
-                    new Container(
-                      width: 590,
-                      height: 150,
+                          ),],),
+                      ),
+                      Container(
+                       margin: EdgeInsets.only(right: 400),
 
-                      child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
-                    ),
-                  ],)
+                        //color: Colors.red,
+                        child: Text("Outro Convênio",style: TextStyle(fontSize: 20), ),
+                      ),
+                      SizedBox(
+                        height: 2,
+                      ),
+                      new Container(
+                        width: width,
+
+
+                        child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
+                      ),
+                    ],)
+
+                  ],),
 
                 ],),
-
-              ],),
+              ),
             ),
 
           ],
@@ -691,7 +724,7 @@ class LandingPage3 extends StatelessWidget {
                       height: 10,
                     ),
                     new Container(
-                      width: 290,
+                      width: 300,
                       height: 60,
                      child: TextField(
 
@@ -969,3 +1002,463 @@ class LandingPage5 extends StatelessWidget {
     );
   }
 }
+
+
+
+
+class Div extends StatelessWidget {
+  List<Widget> pageChildren4(double width) {
+    return <Widget>[
+      Container(
+        color: Colors.grey[100],
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+
+            SizedBox(
+              height: 10.0,),
+            Padding(
+              padding: const EdgeInsets.only(left: 20,),
+              child: Row(  children: <Widget>[ Text("MuLTIMEDIA", style: TextStyle(color: Colors.black, fontSize: 20, ),),],),
+            ),
+
+            SizedBox(
+              height: 50.0,
+
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
+            ),
+
+
+          ],
+        ),
+      ),
+
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: pageChildren4(constraints.biggest.width / 1),
+          );
+        } else {
+          return Column(
+            children: pageChildren4(constraints.biggest.width),
+          );
+        }
+      },
+    );
+  }
+}
+
+
+class LandingPage6 extends StatelessWidget {
+  List<Widget> pageChildren6(double width) {
+
+    return <Widget>[
+
+      Container(
+        color: Colors.grey[100],
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+
+            Padding(
+              padding: EdgeInsets.only(left: 50.0),
+              child: Image.asset(
+                "assets/images/v1.png",
+                width: 220,
+              ),
+            ),
+            Text(
+              "Reforma da Previdência e Regimes Próprios – Possíveis Impactos",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+          ],
+        ),
+
+      ),
+      Container(
+        width: width,
+        color: Colors.grey[100],
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 0.0),
+              child: Image.asset(
+                "assets/images/v1.png",
+                width: 220,
+              ),
+            ),
+            Text(
+              "Codificados: Deputado Janduhy Carneiro na ALPB",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+          ],
+        ),
+      ),
+
+      Container(
+        color: Colors.grey[100],
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 0.0),
+              child: Image.asset(
+                "assets/images/v1.png",
+                width: 220,
+              ),
+            ),
+            Text(
+              "Codificados: Deputado Janduhy Carneiro na ALPB",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+          ],
+        ),
+      ),
+      Container(
+
+        color: Colors.grey[100],
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+
+            Padding(
+              padding: EdgeInsets.only(right: 50.0),
+              child: Image.asset(
+                "assets/images/v1.png",
+                width: 220,
+              ),
+            ),
+            Text(
+              "Frente Parlamentar parte 1 - Desequilíbrio do Federalismo Fiscal Brasileiro",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+          ],
+        ),
+      ),
+
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: pageChildren6(constraints.biggest.width / 4),
+          );
+        } else {
+          return Column(
+            children: pageChildren6(constraints.biggest.width),
+          );
+        }
+      },
+    );
+  }
+}
+
+
+class LandingPage7 extends StatelessWidget {
+  List<Widget> pageChildren6(double width) {
+
+    return <Widget>[
+
+      Container(
+        color: Colors.grey[100],
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+
+            Padding(
+              padding: EdgeInsets.only(left: 50.0),
+              child: Image.asset(
+                "assets/images/v1.png",
+                width: 220,
+              ),
+            ),
+            Text(
+              "Reforma da Previdência e Regimes Próprios – Possíveis Impactos",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+          ],
+        ),
+
+      ),
+      Container(
+        color: Colors.grey[100],
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 0.0),
+              child: Image.asset(
+                "assets/images/v1.png",
+                width: 220,
+              ),
+            ),
+            Text(
+              "Codificados: Deputado Janduhy Carneiro na ALPB",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+          ],
+        ),
+      ),
+
+      Container(
+        color: Colors.grey[100],
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 0.0),
+              child: Image.asset(
+                "assets/images/v1.png",
+                width: 220,
+              ),
+            ),
+            Text(
+              "Codificados: Deputado Janduhy Carneiro na ALPB",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+          ],
+        ),
+      ),
+      Container(
+        color: Colors.grey[100],
+        width: width,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            SizedBox(height: 120,),
+
+            Padding(
+              padding: EdgeInsets.only(right: 50.0),
+              child: Image.asset(
+                "assets/images/v1.png",
+                width: 220,
+              ),
+            ),
+            Text(
+              "Frente Parlamentar parte 1 - Desequilíbrio do Federalismo Fiscal Brasileiro",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15.0,
+                  color: Colors.grey),
+            ),
+
+          ],
+        ),
+      ),
+
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
+          return Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: pageChildren6(constraints.biggest.width / 4),
+          );
+        } else {
+          return Column(
+            children: pageChildren6(constraints.biggest.width),
+          );
+        }
+      },
+    );
+  }
+}
+
+
+class LandingPage9 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.black,
+      height: 500,
+      child: new MarqueeWidget(text: "MUdassar",textStyle:  TextStyle( color: Colors.red, fontSize: 30,
+      ),
+
+        scrollAxis: Axis.horizontal,
+      ),
+
+    );
+  }
+}
+
+class LandingPage10 extends StatelessWidget {
+@override
+Widget build(BuildContext context) {
+  return Container(
+decoration: BoxDecoration(
+  image: DecorationImage(
+    image: AssetImage("assets/4.jpg",),
+fit: BoxFit.cover,
+  ),
+),
+    height: 500,
+width: 1500,
+
+
+    child: Container(
+      color: Colors.black,
+      width: 1000,
+      child:   Column(children: <Widget>[
+
+        Row(children: <Widget>[
+
+          Container(
+
+
+            margin: EdgeInsets.only(left: 220),
+            child: Column(children: <Widget>[
+
+              Container(margin: EdgeInsets.only( top: 80, right: 100),child: Text("Encontre-nos",style: TextStyle(fontSize: 20, color: Colors.white,),)),
+
+              new Container( width: 300, margin: EdgeInsets.only( top: 20, left: 50,),child: Text("Avenida São Paulo, 188, Bairro dos Estados João Pessoa, PB",style: TextStyle(fontSize: 15, color: Colors.black,),)),
+
+              Container(  margin: EdgeInsets.only( left: 50,top: 20,),child: Text("(83) 3044-3282 - João Pessoa",style: TextStyle(fontSize: 20, color: Colors.black,),)),
+              Container(  margin: EdgeInsets.only(left: 70, top: 20,),child: Text("(83) 2102-0800 - Campina Grande",style: TextStyle(fontSize: 20, color: Colors.black,),)),
+
+              Container(  margin: EdgeInsets.only(left: 50, top: 20,),child: Text("principal @ sindifiscopb.org.br",style: TextStyle(fontSize: 20, color: Colors.black,),)),
+
+
+
+            ],),
+
+          ),
+
+          Container(
+
+
+
+            child: Column(children: <Widget>[
+
+              Container(margin: EdgeInsets.only( top: 20,left: 50,),child: Text("O Sindifisco PB",style: TextStyle(fontSize: 20, color: Colors.white,),)),
+
+              new Container( margin: EdgeInsets.only( top: 20, right: 50,),child: Text("Bairro",style: TextStyle(fontSize: 15, color: Colors.black,),)),
+
+              Container(  margin: EdgeInsets.only( top: 20, left: 30,),child: Text("João Pessoa",style: TextStyle(fontSize: 20, color: Colors.black,),)),
+
+              Container(  margin: EdgeInsets.only( top: 20,left: 0, ),child: Text("principal",style: TextStyle(fontSize: 20, color: Colors.black,),)),
+
+
+
+            ],),
+
+          ),
+
+
+
+        ],),
+        Container(
+          child: Row(children: <Widget>[
+            Center(
+              child: Column(
+               children: <Widget>[
+                 SizedBox(
+                   height: 100,
+                   width: 400,
+                 ),
+                 Center(
+                   child: Container(padding: EdgeInsets.only(left: 265), child: Text("--------------------------------------------------------------------------------------------------------------",style: TextStyle( color: Colors.white, ),
+                   ),
+
+                   ),
+                 ),
+                 Center(
+                   child: Container(padding: EdgeInsets.only(left: 260), child: Text("Copyright © 2020 - Sindiisco PB | Política de Privacidade | Termos de Uso",style: TextStyle( color: Colors.black,fontSize: 10, ),
+                   ),
+
+                   ),
+                 ),
+                   Container(
+                     width: 60,
+                     height: 60,
+                     margin: EdgeInsets.only(left: 1200),
+                     child: RaisedButton( onPressed:(){ Navigator.push(context, MaterialPageRoute(builder: (context){
+                       //  return Marquee();
+                       // return VideoApp();
+                       return MyHomePage();
+                     }));},
+                       color:Colors.pink ,
+
+                     child: Container( padding: EdgeInsets.only(top: 10),child: Text("^",style: TextStyle(fontSize: 50, color: Colors.white),)), ),
+                   )
+               ],
+              ),
+            ),
+
+
+          ],),
+        )
+      ],),
+
+
+    ),
+
+  );
+}
+}
+
+

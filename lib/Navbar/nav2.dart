@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webpage/LandingPage/marque.dart';
-
+import 'package:flutter_webpage/videos.dart';
+import 'package:flutter_webpage/landing_page.dart';
 class Nav2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,6 +20,12 @@ class Nav2 extends StatelessWidget {
 }
 
 class DesktopNavbar2 extends StatelessWidget {
+  String selectedCurrency = 'INSTITUCIONAL';
+  String selectedCurrency1 = 'NOTÍCIAS';
+  String selectedCurrency2= 'OPINIÕES';
+  String selectedCurrency3 = 'LEGISLAÇÃO';
+  String selectedCurrency4 = 'FALE CONOSCO';
+  String selectedCurrency5 = 'ÁREA DO FILIADO';
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -42,44 +49,149 @@ class DesktopNavbar2 extends StatelessWidget {
                 SizedBox(
                   width: 10,
                 ),
-                Text(
-                  "INSTITUCIONAL",
-                  style: TextStyle(color: Colors.black,),
+                Container(
+                  height: 150.0,
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 0.0),
+                  color: Colors.white,
+                  child: DropdownButton<String>(
+                      value: selectedCurrency,
+                      items:[
+                        DropdownMenuItem(child: Text('INSTITUCIONAL',style: TextStyle(fontSize: 10,),),
+                          value: 'INSTITUCIONAL',
+                        ),
+                        DropdownMenuItem(child: Text('NOTÍCIAS',style: TextStyle(fontSize: 10,),),
+                          value: 'NOTÍCIAS',
+                        ),
+                        DropdownMenuItem(child: Text('OPINIÕES',style: TextStyle(fontSize: 10,),),
+                          value: 'OPINIÕES',
+                        )
+                      ],onChanged : (value){
+                    selectedCurrency = value;
+                  }),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                Text(
-                  "NOTICIOES",
-                  style: TextStyle(color: Colors.black),
+                Container(
+                  height: 150.0,
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 0.0),
+                  color: Colors.white,
+                  child: DropdownButton<String>(
+                      value: selectedCurrency1,
+                      items:[
+                        DropdownMenuItem(child: Text('INSTITUCIONAL',style: TextStyle(fontSize: 10,),),
+                          value: 'INSTITUCIONAL',
+                        ),
+                        DropdownMenuItem(child: Text('NOTÍCIAS',style: TextStyle(fontSize: 10,),),
+                          value: 'NOTÍCIAS',
+                        ),
+                        DropdownMenuItem(child: Text('OPINIÕES',style: TextStyle(fontSize: 10,),),
+                          value: 'OPINIÕES',
+                        )
+                      ],onChanged : (value){
+                    selectedCurrency1 = value;
+                  }),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                Text(
-                  "NOTICIOES",
-                  style: TextStyle(color: Colors.black),
+                Container(
+                  height: 150.0,
+
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 0.0),
+                  color: Colors.white,
+                  child: DropdownButton<String>(
+                      value: selectedCurrency2,
+                      items:[
+                        DropdownMenuItem(child: Text('NOTÍCIAS',style: TextStyle(fontSize: 10,),),
+                          value: 'INSTITUCIONAL',
+                        ),
+                        DropdownMenuItem(child: Text('TOTÍCIAS',style: TextStyle(fontSize: 10,),),
+                          value: 'NOTÍCIAS',
+                        ),
+                        DropdownMenuItem(child: Text('OPINIÕES',style: TextStyle(fontSize: 10,),),
+                          value: 'OPINIÕES',
+                        )
+                      ],onChanged : (value){
+                    selectedCurrency2 = value;
+                  }),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                Text(
-                  "OPINIOES",
-                  style: TextStyle(color: Colors.black),
+                Container(
+                  height: 150.0,
+
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 0.0),
+                  color: Colors.white,
+                  child: DropdownButton<String>(
+                      value: selectedCurrency,
+                      items:[
+                        DropdownMenuItem(child: Text('LEGISLAÇÃO',style: TextStyle(fontSize: 10,),),
+                          value: 'INSTITUCIONAL',
+                        ),
+                        DropdownMenuItem(child: Text('LEGISLAÇÃO',style: TextStyle(fontSize: 10,),),
+                          value: 'NOTÍCIAS',
+                        ),
+                        DropdownMenuItem(child: Text('ÁREA DO FILIADO',style: TextStyle(fontSize: 10,),),
+                          value: 'OPINIÕES',
+                        )
+                      ],onChanged : (value){
+                    selectedCurrency2 = value;
+                  }),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                Text(
-                  "LEGISLACAO",
-                  style: TextStyle(color: Colors.black),
+                Container(
+                  height: 150.0,
+
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 0.0),
+                  color: Colors.white,
+                  child: DropdownButton<String>(
+                      value: selectedCurrency,
+                      items:[
+                        DropdownMenuItem(child: Text('ÁREA DO FILIADO',style: TextStyle(fontSize: 10,),),
+                          value: 'INSTITUCIONAL',
+                        ),
+                        DropdownMenuItem(child: Text('LEGISLAÇÃO',style: TextStyle(fontSize: 10,),),
+                          value: 'NOTÍCIAS',
+                        ),
+                        DropdownMenuItem(child: Text('ÁREA DO FILIADO',style: TextStyle(fontSize: 10,),),
+                          value: 'OPINIÕES',
+                        )
+                      ],onChanged : (value){
+                    selectedCurrency2 = value;
+                  }),
                 ),
                 SizedBox(
                   width: 10,
                 ),
-                Text(
-                  "FALE CONOSCO",
-                  style: TextStyle(color: Colors.black),
+                Container(
+                  height: 150.0,
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 0.0),
+                  color: Colors.white,
+                  child: DropdownButton<String>(
+                      value: selectedCurrency,
+                      items:[
+                        DropdownMenuItem(child: Text('TUCIONAL',style: TextStyle(fontSize: 10,),),
+                          value: 'INSTITUCIONAL',
+                        ),
+                        DropdownMenuItem(child: Text('NOTÍCIAS',style: TextStyle(fontSize: 10,),),
+                          value: 'NOTÍCIAS',
+                        ),
+                        DropdownMenuItem(child: Text('OPINIÕES',style: TextStyle(fontSize: 10,),),
+                          value: 'OPINIÕES',
+                        )
+                      ],onChanged : (value){
+                    selectedCurrency2 = value;
+                  }),
                 ),
                 SizedBox(
                   width: 10,
@@ -97,7 +209,9 @@ class DesktopNavbar2 extends StatelessWidget {
               children: <Widget>[
                 IconButton(icon: Icon(Icons.search,color: Colors.black,) ,
                   onPressed:(){ Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return Marquee();
+                  //  return Marquee();
+                   //return VideoApp();
+                   return LandingPage0();
                   }));},
                 )
 
