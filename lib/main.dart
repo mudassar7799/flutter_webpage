@@ -72,6 +72,15 @@ class MyHomePage extends StatelessWidget {
 
 
               ),
+
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 0.0),
+                child: LandingPage11(),
+
+
+              ),
+
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 0.0, horizontal: 0.0),
@@ -123,6 +132,7 @@ class MyHomePage extends StatelessWidget {
 
 
               ),
+
 
             ],
           ),

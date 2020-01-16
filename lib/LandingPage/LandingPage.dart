@@ -138,7 +138,8 @@ class LandingPage3 extends StatelessWidget {
 
       Container(
           width: 950,
-
+padding: EdgeInsets.only(bottom: 100),
+//color: Colors.red,
         child:Column(
           children: <Widget>[
             Row(children: <Widget>[
@@ -190,247 +191,7 @@ class LandingPage3 extends StatelessWidget {
                 style: TextStyle(fontSize: 16.0, color: Colors.grey),
               ),
             ),
-            MaterialButton(
-              color: Colors.white,
 
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(0.0)),
-              ),
-
-              onPressed: () {},
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, horizontal: 40.0),
-                child: Text(
-                  "CONTINUAR LENDO  >",
-                  style: TextStyle(color: Colors.black),
-                ),
-              ),
-            ),
-
-            SizedBox(
-              height: 80.0,
-              width: 270.0,
-
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20,),
-              child: Row(  children: <Widget>[ Text("09 de Dezembro, 201", style: TextStyle(color: Colors.black, fontSize: 20, ),),],),
-            ),
-
-            SizedBox(
-              height: 10.0,
-              width: 870.0,
-              child: Divider(
-                color: Colors.teal.shade100,
-              ),
-            ),
-            SingleChildScrollView(
-              child: Container(
-                height: 240,
-                width: 1000,
-             //   color: Colors.red,
-
-                child: Column(children: <Widget>[
-                  Row(children: <Widget>[
-                    Container(
-
-                      width: 300,
-                      child: Column(children: <Widget>[
-
-                        Image.asset(
-                          "assets/4.jpg",
-                          width: width,
-
-                        ),
-
-                      ],),
-                    ),
-                    Column(children: <Widget>[
-
-                      Container(
-                        // color: Colors.red,
-                        margin: EdgeInsets.only(top: 0),
-                        child: Row(children: <Widget>[
-
-                          Padding(
-                            padding: const EdgeInsets.only(right: 500,),
-                            child: MaterialButton(
-                              color: Colors.red,
-
-                              onPressed: () {},
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 0.0, horizontal: 0.0),
-                                child: Text(
-                                  "ENSION",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ),
-                            ),
-                          ),],),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 400),
-
-                        //color: Colors.red,
-                        child: Text("Outro Convênio",style: TextStyle(fontSize: 20), ),
-                      ),
-                      SizedBox(
-                        height: 2,
-                      ),
-                      new Container(
-                        width: width,
-
-
-                        child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
-                      ),
-                    ],)
-
-                  ],),
-
-                ],),
-              ),
-            ),
-
-
-
-
-            SingleChildScrollView(
-              child: Container(
-                height: 240,
-                width: 1000,
-                //color: Colors.red,
-
-                child: Column(children: <Widget>[
-                  Row(children: <Widget>[
-                    Container(
-
-                      width: 300,
-                      child: Column(children: <Widget>[
-
-                        Image.asset(
-                          "assets/1.jpg",
-                          width: width,
-
-                        ),
-
-                      ],),
-                    ),
-                    Column(children: <Widget>[
-
-                      Container(
-                        // color: Colors.red,
-                        margin: EdgeInsets.only(top: 0),
-                        child: Row(children: <Widget>[
-
-                          Padding(
-                            padding: const EdgeInsets.only(right: 500,),
-                            child: MaterialButton(
-                              color: Colors.red,
-
-                              onPressed: () {},
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 0.0, horizontal: 0.0),
-                                child: Text(
-                                  "ENSION",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ),
-                            ),
-                          ),],),
-                      ),
-                      Container(
-                        margin: EdgeInsets.only(right: 400),
-
-                        //color: Colors.red,
-                        child: Text("Outro Convênio",style: TextStyle(fontSize: 20), ),
-                      ),
-                      SizedBox(
-                        height: 2,
-                      ),
-                      new Container(
-                        width: width,
-
-
-                        child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
-                      ),
-                    ],)
-
-                  ],),
-
-                ],),
-              ),
-            ),
-
-            SingleChildScrollView(
-              child: Container(
-                height: 240,
-                width: 1000,
-              //  color: Colors.red,
-
-                child: Column(children: <Widget>[
-                  Row(children: <Widget>[
-                    Container(
-
-                      width: 300,
-                      child: Column(children: <Widget>[
-
-                        Image.asset(
-                          "assets/2.jpg",
-                          width: width,
-
-                        ),
-
-                      ],),
-                    ),
-                    Column(children: <Widget>[
-
-                      Container(
-                        // color: Colors.red,
-                        margin: EdgeInsets.only(top: 0),
-                        child: Row(children: <Widget>[
-
-                          Padding(
-                            padding: const EdgeInsets.only(right: 500,),
-                            child: MaterialButton(
-                              color: Colors.red,
-
-                              onPressed: () {},
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    vertical: 0.0, horizontal: 0.0),
-                                child: Text(
-                                  "ENSION",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ),
-                            ),
-                          ),],),
-                      ),
-                      Container(
-                       margin: EdgeInsets.only(right: 400),
-
-                        //color: Colors.red,
-                        child: Text("Outro Convênio",style: TextStyle(fontSize: 20), ),
-                      ),
-                      SizedBox(
-                        height: 2,
-                      ),
-                      new Container(
-                        width: width,
-
-
-                        child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
-                      ),
-                    ],)
-
-                  ],),
-
-                ],),
-              ),
-            ),
 
           ],
         )
@@ -438,11 +199,10 @@ class LandingPage3 extends StatelessWidget {
       ),
 
 
-
       Container(
         width: 300,
-        height: 1700,
-      //  color: Colors.black,
+
+      // color: Colors.black,
         padding: const EdgeInsets.only(top: 0,),
         margin: const EdgeInsets.only(top: 0,),
         child: Column(
@@ -678,6 +438,101 @@ class LandingPage3 extends StatelessWidget {
 
               ],),
             ),
+
+
+
+
+          ],
+
+        ),
+
+      ),
+
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth > 800) {
+          return Row(
+
+            children: pageChildren3(constraints.biggest.width / 2),
+          );
+        } else {
+          return Column(
+            children: pageChildren3(constraints.biggest.width),
+          );
+        }
+      },
+    );
+  }
+}
+
+class LandingPage11 extends StatelessWidget {
+  List<Widget> pageChildren3(double width) {
+    return <Widget>[
+
+      Container(
+
+       // color: Colors.red,
+
+        width: 350,
+
+        //  color: Colors.black,
+        padding: const EdgeInsets.only(top: 2,),
+        margin: const EdgeInsets.only(bottom: 0,),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            MaterialButton(
+              color: Colors.white,
+
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(0.0)),
+              ),
+
+              onPressed: () {},
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20.0, horizontal: 40.0),
+                child: Text(
+                  "CONTINUAR LENDO  >",
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+            ),
+            SizedBox(height: 50,),
+            Text("CONVÊNIOS", style: TextStyle(color: Colors.black, fontSize: 20),),
+            SizedBox(
+              height: 20.0,
+
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
+            ),
+
+
+            Container(
+              child: Column(children: <Widget>[
+                Row(children: <Widget>[
+                  Column(children: <Widget>[
+                    Image.asset(
+                      "assets/4.jpg",
+                      width: 300,
+
+                    ),
+
+                  ],),
+
+
+                ],),
+
+              ],),
+            ),
+
+
             SizedBox(
               height: 10,
             ),
@@ -686,9 +541,237 @@ class LandingPage3 extends StatelessWidget {
                 Row(children: <Widget>[
                   Column(children: <Widget>[
                     Image.asset(
+                      "assets/1.jpg",
+                      width: 300,
+
+                    ),
+
+                  ],),
+
+
+                ],),
+
+              ],),
+            ),
+
+
+
+            SizedBox(
+              height: 10,
+            ),
+            new  Container(
+              child: Column(children: <Widget>[
+                Row(children: <Widget>[
+                  Column(children: <Widget>[
+                    Image.asset(
+                      "assets/3.jpg",
+                      width: 300,
+
+                    ),
+
+                  ],),
+
+                ],),
+
+              ],),
+            ),
+
+
+
+
+
+
+          ],
+
+        ),
+
+      ),
+
+
+      Container(
+        width: 600,
+
+        // color: Colors.black,
+        padding: const EdgeInsets.only(top: 160,),
+        margin: const EdgeInsets.only(top: 0,),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+
+
+            SizedBox(
+              height: 20.0,
+
+              child: Divider(
+                color: Colors.teal.shade100,
+              ),
+            ),
+            Container(
+              child: Column(children: <Widget>[
+                Row(children: <Widget>[
+                  Column(children: <Widget>[
+
+
+                  ],),
+                  Column(children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Container(
+
+                          child: RaisedButton(onPressed: (){},
+                            color: Colors.red,
+                            child: Text("NOTIVA",style: TextStyle(color: Colors.white,),),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      width: 490,
+                      height: 30,
+                      child: Text("Lorem ipsum dolor sit amet, ", ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    new Container(
+                      width: 490,
+                      height: 100,
+                      child: Text(" consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
+                    ),
+                  ],)
+
+                ],),
+
+              ],),
+            ),
+
+
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: Column(children: <Widget>[
+                Row(children: <Widget>[
+                  Column(children: <Widget>[
+
+
+                  ],),
+                  Column(children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Container(
+
+                          child: RaisedButton(onPressed: (){},
+                            color: Colors.red,
+                            child: Text("NOTIVA",style: TextStyle(color: Colors.white,),),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      width: 490,
+                      height: 30,
+                      child: Text("Lorem ipsum dolor sit amet, ", ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    new Container(
+                      width: 490,
+                      height: 100,
+                      child: Text(" consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
+                    ),
+                  ],)
+
+                ],),
+
+              ],),
+            ),
+
+
+
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: Column(children: <Widget>[
+                Row(children: <Widget>[
+                  Column(children: <Widget>[
+
+
+                  ],),
+                  Column(children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Container(
+
+                          child: RaisedButton(onPressed: (){},
+                            color: Colors.red,
+                            child: Text("NOTIVA",style: TextStyle(color: Colors.white,),),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      width: 490,
+                      height: 30,
+                      child: Text("Lorem ipsum dolor sit amet, ", ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    new Container(
+                      width: 490,
+                      height: 100,
+                      child: Text(" consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.",style: TextStyle(color: Colors.grey,), ),
+                    ),
+                  ],)
+
+                ],),
+
+              ],),
+            ),
+
+
+
+
+
+
+          ],
+
+        ),
+
+      ),
+
+
+
+      Container(
+        width: 300,
+
+       //  color: Colors.black,
+        padding: const EdgeInsets.only(top: 0,),
+        margin: const EdgeInsets.only(top: 0,),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+
+            new  Container(
+              child: Column(children: <Widget>[
+                Row(children: <Widget>[
+                  Column(children: <Widget>[
+                    Image.asset(
                       "assets/banr.png",
                       width: 200,
-                      height: 400,
+
                     ),
 
                   ],),
@@ -726,17 +809,17 @@ class LandingPage3 extends StatelessWidget {
                     new Container(
                       width: 300,
                       height: 60,
-                     child: TextField(
+                      child: TextField(
 
-                       decoration: InputDecoration(enabledBorder: OutlineInputBorder(
-                       borderSide: BorderSide(color: Colors.blueGrey, ),
-                     ), focusedBorder: OutlineInputBorder(
-                         borderSide: BorderSide(color: Colors.blueGrey, ),
-                       ),
-                         hintText: "email",
-                       filled: true,
-                         fillColor: Colors.grey[200],
-                       ),),
+                        decoration: InputDecoration(enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.blueGrey, ),
+                        ), focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.blueGrey, ),
+                        ),
+                          hintText: "email",
+                          filled: true,
+                          fillColor: Colors.grey[200],
+                        ),),
 
                     ),
 
@@ -747,10 +830,10 @@ class LandingPage3 extends StatelessWidget {
               ],),
             ),
             Container(
-              width: 300,
-              child: RaisedButton(color: Colors.red,
+                width: 300,
+                child: RaisedButton(color: Colors.red,
 
-                onPressed: (){}, child: Text("INSCREVER",style: TextStyle(color: Colors.white),),)
+                  onPressed: (){}, child: Text("INSCREVER",style: TextStyle(color: Colors.white),),)
             ),
             SizedBox(
               height: 80.0,
@@ -800,7 +883,7 @@ class LandingPage3 extends StatelessWidget {
         if (constraints.maxWidth > 800) {
           return Row(
 
-            children: pageChildren3(constraints.biggest.width / 2),
+            children: pageChildren3(constraints.biggest.width / 3),
           );
         } else {
           return Column(
@@ -1460,5 +1543,6 @@ width: 1500,
   );
 }
 }
+
 
 
