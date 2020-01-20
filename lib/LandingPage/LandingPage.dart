@@ -4,6 +4,7 @@ import 'dart:async';
 import 'package:flutter_webpage/main.dart';
 import 'package:video_player/video_player.dart';
 class LandingPage extends StatelessWidget {
+
   List<Widget> pageChildren(double width) {
     return <Widget>[
 
